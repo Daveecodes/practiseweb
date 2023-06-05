@@ -21,13 +21,13 @@
             gap: 30px;
         }
         
-        @include media(1130){
+        @include media(1000){
             flex-wrap: wrap
         }
 
 
         &_panel{
-            @include flex(start,unset);
+            @include flex(end,end);
             
         }
 
@@ -36,7 +36,6 @@
             line-height: 140%;
             color: #181818;
             @include adaptive-value('font-size',18,15);
-            width: 40%;
 
         }
 
