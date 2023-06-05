@@ -22,7 +22,9 @@
   &_content{
     @include flex(start,unset);
     flex-direction: column;
-    gap: 71px  
+    gap: 71px  ;
+   
+
   }
 
   &_content_panel{
@@ -46,7 +48,7 @@
 
     
 
-    &_tex{
+    &_text{
       @include flex(start, unset);
       flex-direction: column;
       gap: 15px;
@@ -69,7 +71,7 @@
     &_info{
       @include flex(center, start);
       flex-direction: column;
-      gap: 22px;
+      gap: 30px;
 
       
 

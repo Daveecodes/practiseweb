@@ -6,7 +6,11 @@
         font-weight: 400;
         line-height: 100%;
         color: #181818;
-        @include adaptive-value('font-size',48,35)
+        @include adaptive-value('font-size',48,35);
+
+        &_title{
+            color: $white;
+        }
     }
 
 
@@ -37,6 +41,10 @@
             color: #181818;
             @include adaptive-value('font-size',18,15);
 
+            &_desc{
+                color: $white;
+            }
+
         }
 
         &_number{
@@ -44,6 +52,10 @@
             line-height: 100%;
             color: #181818;
             @include adaptive-value('font-size',55,25);
+
+            &_number{
+                color: $white;
+            }
         }
     }
 }

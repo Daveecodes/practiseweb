@@ -48,6 +48,10 @@ html, body {
   position: relative;
   min-height: 100vh;
 }
+.header_bottom {
+  position: absolute;
+  z-index: -5;
+}
 .header_bg {
   position: absolute;
   width: 100%;
@@ -334,6 +338,9 @@ html, body {
            35px + 13 * ((100vw - 32px) / 790));
   }
 }
+.info_title_title {
+  color: #fff;
+}
 .info_text {
   display: flex;
   align-items: center;
@@ -369,6 +376,9 @@ html, body {
            15px + 3 * ((100vw - 32px) / 790));
   }
 }
+.info_text_desc_desc {
+  color: #fff;
+}
 .info_text_number {
   font-weight: 400;
   line-height: 100%;
@@ -380,6 +390,9 @@ html, body {
     font-size: calc(
            25px + 30 * ((100vw - 32px) / 790));
   }
+}
+.info_text_number_number {
+  color: #fff;
 }
 
 .projects {
@@ -639,7 +652,7 @@ html, body {
     flex-direction: column;
   }
 }
-.about_desc_tex {
+.about_desc_text {
   display: flex;
   align-items: start;
   justify-content: unset;
@@ -675,7 +688,7 @@ html, body {
   align-items: center;
   justify-content: start;
   flex-direction: column;
-  gap: 22px;
+  gap: 30px;
 }
 .about_desc_info_text {
   font-weight: 400;
