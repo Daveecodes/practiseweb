@@ -238,7 +238,7 @@ html, body {
 .footer_text {
   display: flex;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
   gap: 30px;
   font-weight: 400;
   line-height: 140%;
