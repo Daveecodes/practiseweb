@@ -4,8 +4,9 @@
 
 
     &_bottom{
+        @include flex(center,end);
         position: absolute;
-        z-index: -5;
+        z-index: -1;
     }
 
 

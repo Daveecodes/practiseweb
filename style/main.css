@@ -49,8 +49,11 @@ html, body {
   min-height: 100vh;
 }
 .header_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   position: absolute;
-  z-index: -5;
+  z-index: -1;
 }
 .header_bg {
   position: absolute;
@@ -230,6 +233,23 @@ html, body {
 
 .footer {
   position: relative;
+  margin-top: 38px;
+}
+.footer_text {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #181818;
+  font-size: 18px;
+}
+@media screen and (max-width: 1110px) {
+  .footer_text {
+    font-size: calc(
+           15px + 3 * ((100vw - 32px) / 790));
+  }
 }
 
 .product {
@@ -272,7 +292,7 @@ html, body {
   margin-top: 50px;
 }
 .product_desc_blue {
-  padding: 10px;
+  padding: 10px 11px;
   border-radius: 5px;
   color: #fff;
   background-color: #2B59C3;
@@ -341,9 +361,12 @@ html, body {
 .info_title_title {
   color: #fff;
 }
+.info_row_row {
+  padding-top: 20%;
+}
 .info_text {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   margin-top: 30px;
 }
@@ -359,10 +382,17 @@ html, body {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1000px) {
+  .info_text_text {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 .info_text_panel {
   display: flex;
-  align-items: end;
-  justify-content: end;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
 }
 .info_text_desc {
   font-weight: 400;
@@ -490,6 +520,50 @@ html, body {
 .register {
   margin-top: 77px;
 }
+.register_register {
+  margin-top: 250px;
+}
+@media screen and (max-width: 1110px) {
+  .register_register {
+    margin-top: calc(
+           40px + 210 * ((100vw - 32px) / 790));
+  }
+}
+@media screen and (max-width: 1110px) {
+  .register_register {
+    margin-top: 250px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .register_register {
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .register_register {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .register_right {
+    text-align: start;
+  }
+}
+.register_bigrow {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+@media screen and (max-width: 1110px) {
+  .register_bigrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
 .register_text {
   display: flex;
   flex-direction: column;
@@ -499,13 +573,16 @@ html, body {
   font-weight: 400;
   line-height: 140%;
   color: #181818;
-  font-size: 38px;
+  font-size: 28px;
 }
 @media screen and (max-width: 1110px) {
   .register_title {
     font-size: calc(
-           32px + 6 * ((100vw - 32px) / 790));
+           22px + 6 * ((100vw - 32px) / 790));
   }
+}
+.register_title_title {
+  margin-bottom: 32px;
 }
 @media screen and (max-width: 1020px) {
   .register_title {
@@ -536,6 +613,19 @@ html, body {
   justify-content: start;
   gap: 30px;
   margin: 25px 0;
+}
+.register_row_row {
+  flex-direction: column;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+@media screen and (max-width: 1110px) {
+  .register_row_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1020px) {
   .register_row {
@@ -700,5 +790,43 @@ html, body {
   .about_desc_info_text {
     font-size: calc(
            20px + 6 * ((100vw - 32px) / 790));
+  }
+}
+
+.desc {
+  margin-top: 30px;
+}
+.desc_text {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+  margin-top: 25px;
+}
+@media screen and (max-width: 900px) {
+  .desc_text {
+    flex-direction: column;
+  }
+}
+.desc_text_first {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (max-width: 450px) {
+  .desc_text_first {
+    flex-direction: column;
+  }
+}
+.desc_text_second {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (max-width: 450px) {
+  .desc_text_second {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
